@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Roboto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    top: 0;
+}
+
+.name{
+    flex: 1;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hamburger{
+    visibility: hidden;
+
+}
+.hamburger i{
+    margin-top: 100%;
+}
+
+
+
+.details{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    width: 100px;
+    margin: 0px 5px;
+    padding-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: orangered;
+}
+
+.pro{
+    margin-right: 10px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+
+}
+
+i{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.home-page{
+    position: relative;
+    
+}
+
+.social{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mydetails{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-top: 120px;
+}
+
+.p1{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.p2{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.p3,.p4{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button{
+    background-color: red;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover{
+    background-color: brown;
+}
+
+.left{ 
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pp{
+    border-radius: 40px
+}
+
+.about_me{
+    margin-top: 120px;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+}
+
+.det{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 150px;
+}
+
+
+.d1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.d2{
+    font-size: 25px;
+    font-weight: 300;
+    color: blue;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.d3{
+    margin-left: 130px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.d4, .d5, .d6{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 120px;
+}
+
+.cv{
+    width: 200px;
+    margin-left: 180px;
+}
+.det i{
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.skills-page{
+    padding-top: 100px;
+}
+
+.a1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.a2{
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+}
+
+.dat{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.line{
+    height: 8px;
+    width: 600px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.innerline1, .innerline2, .innerline3, .innerline4{
+    height: 8px;
+    border-radius: 20px;
+}
+
+.innerline1{
+    background-color: green;
+    width: 90%;
+}
+
+.innerline2{
+    background-color: green;
+    width: 80%;
+}
+
+.innerline3{
+    width: 50%;
+    background-color: orange;
+}
+
+.innerline4{
+    background-color: orange;
+    width: 50%;
+}
+
+.bottom{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skil{
+    width: 600px;
+    border-radius: 30px;
+}
+
+.projects-page{
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.q1{
+    
+    height: 200px;
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    border-bottom: orangered 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;cursor: pointer;
+    margin-right: 30px;
+    transition: 0.15s;
+}
+
+.q1:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.q1 i{
+    font-size: 50px;
+}
+
+.spec{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.more{
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+}
+
+.projet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.secpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+input,textarea{
+    outline: none;
+}
+
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g3, .g4{
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(190, 218, 248);
+    border: none;
+    width: 600px;
+    
+}
+
+
+.g3::placeholder, .g4::placeholder, .g5::placeholder{
+    color: black;
+}
+
+.g5{
+    font-family: Roboto;
+    padding-left: 20px;
+    padding-top: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(190, 218, 248);
+    border: none;
+    height: 300px;
+    width: 600px;
+}
+
+
+.g6{
+    width: 200px;
+    height: 50px;
+}
+
+.f1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: lightblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.j1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.j2{
+    margin-top: 15px;
+}
+
+.j2 i{
+    margin: 0px 8px;
+    font-size: 35px;
+}
+
+.f2{
+    background-color: orangered;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.f2 span{
+    color: purple;
+}
+
+@media (max-width: 1000px){
+    .g3, .g4, .g5{
+        width: 400px;
+    }
+
+    .projet{
+        flex-direction: column;
+    }
+
+    .q1{
+        margin-bottom: 20px;
+    }
+
+    .bottom{
+        flex-direction: column;
+        
+    }
+
+    .skil{
+        width: 450px;
+    }
+    
+    .name{
+        text-align: center;
+        margin-left: 0;
+        padding: 0 20px;
+        width: 100%;
+
+        }
+.name p{
+    text-align: r;
+}
+        
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+
+    .mydetails{
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    .details{
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .details ul li{
+        margin: 8px 0;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    .social{
+        left: 60px;
+        top: 20%;
+    }
+
+    .pp{
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    .about-me{
+        flex-direction: column;
+        
+       
+    }
+    .about-me img{
+        width: 80%;
+    }
+   
+    .bottom{
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        width: 80%;
+    }
+
+    .data{
+        width: 100%;
+    }
+    .dat{
+        width: 80%;
+    }
+
+    .hamburger{
+        visibility: visible;
+        margin-left: auto;
+    }
+
+    header.isOpen{
+        height: 100px;
+    }
+
+    header.isOpen .details{
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+
+
